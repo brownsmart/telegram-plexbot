@@ -28,8 +28,10 @@ Requirements & Instructions
 Things i want to do 
 ===================
 
-1. Add notifications where a user enters something like "/tv alert power s02 episode 08" the bot will send a private message to the telegram user letting them know the show has been added. Same for movies and other forms of content.
+1. Change the way I use the "if '/tv' in text" option in instead of just using if '/tv': as command, because if the user was to put /tv in a conversation while the bot is in a group chat then the command would be triggered.
 
-2. "/whoswatching" this will query using http://PMS:32000/status/sessions command and parse the XML from "root.findall('./Video/User')" and "root.findall('./Video')" from the User <User title=""> Attributes and from Video the <title=""> attributes. Problem I have is I think i need to write a simultaneous loop in python to pluck out of one child node in the XML and then go back in deeper to get another child node then push out both attributes using the reply(var1 +' - ' + var2) but just cant get it to root.findall, then root.findall again "YET"!!
+2. Add notifications where a user enters something like "/tv alert power s02 episode 08" the bot will send a private message to the telegram user letting them know the show has been added. Same for movies and other forms of content.
 
-3. Eventually I want this re-done in NodeJs, as much as I am loving python, I want to do this in Javascript, so I am going to fork https://github.com/pintux/whataboutBot as a start!, but going to use this python as my quick and simple playground first.
+3. "/whoswatching" this will query using http://PMS:32000/status/sessions command and parse the XML from "root.findall('./Video/User')" and "root.findall('./Video')" from the User <User title=""> Attributes and from Video the <title=""> attributes. Problem I have is I think i need to write a simultaneous loop in python to pluck out of one child node in the XML and then go back in deeper to get another child node then push out both attributes using the reply(var1 +' - ' + var2) but just cant get it to root.findall, then root.findall again "YET"!!
+
+4. Eventually I want this re-done in NodeJs, as much as I am loving python, I want to do this in Javascript, so I am going to fork https://github.com/pintux/whataboutBot as a start!, but going to use this python as my quick and simple playground first.
