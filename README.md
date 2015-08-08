@@ -21,7 +21,7 @@ Requirements & Instructions
 8. Visit https://github.com/yukuku/telebot and setup your Telegram Bot, Google Cloud Engine and Webhooks (You can run this via another server using Python but not sure if there is a SSL requirement if using your own server and Python and Telegram API)
 9. Update TOKEN = '' with your TELEGRAM TOKEN in the "main.py" file.
 10. Scroll down through the "main.py" file and look for "I CUSTOMISED HERE" (Line: 114)
-11. Edit the lines 117 through to 153 to accomdate how your PMS API XML data is displayed, e.g. your sections http://192.168.0.197:32400/library/sections will show you which numbers are which so you know what to put in the URL
+11. Edit the lines 117 through to 153 to accomdate how your PMS API XML data is displayed, e.g. your sections http://PMS_ADDRESS:32400/library/sections will show you which numbers are which so you know what to put in the URL
 12. After that its about which API commands you need for your bot.
 
 ===================
